@@ -1,13 +1,6 @@
 import React from 'react';
-import {
-  Button,
-  Image,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-// import Profile from '../../assets/assets/images/profile.svg';
+import {Image, Text, TextInput, View} from 'react-native';
+import Profile from '../../assets/assets/images/profile.svg';
 import CustomButton from '../../components/ui/button';
 import Layout from '../../components/ui/layout';
 
@@ -26,14 +19,14 @@ export default function Name() {
             </Text>
           </View>
           <View className="min-w-full min-h-fit py-2 flex  items-center justify-between">
-            <View className="w-full border-2 border-red-200 rounded-lg">
+            <View className="w-full border-[1px] border-gray-400 rounded-md flex flex-row items-center justify-center pl-5">
+              <Profile width={20} height={20} />
               <TextInput
                 placeholder="Enter Name"
                 keyboardType="text"
-                className="min-w-full"
+                className="flex-grow pl-2"
               />
             </View>
-            {/* <Profile width={120} height={40} /> */}
           </View>
         </View>
         <CustomButton text="submit" />
