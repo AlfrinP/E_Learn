@@ -1,8 +1,8 @@
 import React from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
-// import Profile from '../../assets/assets/images/profile.svg';
 import CustomButton from '../../components/ui/button';
 import Layout from '../../components/ui/layout';
+import Phone from '../../assets/assets/images/phone.svg';
 
 function Login() {
   return (
@@ -21,10 +21,13 @@ function Login() {
             </Text>
           </View>
           <View className="w-full min-h-fit p-2 flex  items-center justify-between">
-            <View className="w-full border-[1px] border-gray-400 rounded-md">
-              <TextInput keyboardType="text" className="min-w-full" />
+            <View className="min-w-full border-[1px] border-gray-400 rounded-md flex flex-row items-center p-1">
+              <View className="w-fit h-fit object-contain p-1 ">
+                <Phone width={30} height={30} />
+              </View>
+              <Text className="text-xl font-bold text-black">+91</Text>
+              <TextInput keyboardType="text" className="" />
             </View>
-            {/* <Profile width={120} height={40} /> */}
           </View>
         </View>
         <CustomButton text="join now" />

@@ -1,5 +1,4 @@
 import {Image, Text, TextInput, View} from 'react-native';
-// import Profile from '../../assets/assets/images/profile.svg';
 import CustomButton from '../../components/ui/button';
 import Layout from '../../components/ui/layout';
 

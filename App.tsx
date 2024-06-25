@@ -5,6 +5,7 @@ import Name from './screens/auth/name';
 import Home from './screens/root/home';
 import Status from './screens/root/status';
 import Profile from './screens/root/profile';
+import Password from './screens/auth/password';
 
 export default function App() {
   return (
