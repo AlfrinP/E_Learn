@@ -4,6 +4,7 @@ module.exports = {
     './App.{js,jsx,ts,tsx}',
     './<custom-folder>/**/*.{js,jsx,ts,tsx}',
     './screens/**/*.{js,jsx,ts,tsx}',
+    './components/ui/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {},
