@@ -10,9 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@ramonak/react-progress-bar": "^5.2.0",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-native": "0.74.2",
+    "react-native-progress": "^5.0.1",
     "react-native-svg": "^15.3.0"
   },
   "devDependencies": {

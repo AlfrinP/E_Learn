@@ -1,47 +1,44 @@
 import React from 'react';
-import {Button, Image, ScrollView, Text, TextInput, View} from 'react-native';
-import {scroll,account} from '../../constants/index';
+import {View, Image, Text, Touchable, TouchableOpacity} from 'react-native';
+import Layout from '../../components/ui/layout';
+import * as Progress from 'react-native-progress';
 
-const home = () => {
+export default function home() {
   return (
-    <View className="w-full h-full">
-      <View className="mt-[10%] w-full items-center">
-        <Image
-          className="rounded-full w-24 h-24 items-center"
-          source={require('../../assets/assets/images/person.jpg')}
-        />
-        <Text className="mt-2 font-semibold text-lg text-center">
-          Alfrin Poulose
-        </Text>
-        <Text className="text-center">alfrinpoulose@gmail.com</Text>
-      </View>
-      <View className="mt-10">
-        <Text className="mb-3 text-lg font-semibold">Course You're Taking</Text>
-        <ScrollView horizontal={true} className='w-full gap-3'>
-          {scroll.map((item, index) => (
-            <View className="w-fit h-fit p-4 bg-red-500 rounded-md" style={item.bg} key={index}>
-              <Text className="text-md font-md text-green-500">
-                {item.label}
-              </Text>
-              <Text className="text-sm text-gray-500">{item.time}</Text>
+    <Layout>
+      <View className="w-full h-full">
+        <View className="mt-2 flex-row ">
+          <View className='flex-row'>
+          <Image
+            className="rounded-full w-16 h-16"
+            source={require('../../assets/assets/images/person.jpg')}
+          />
+          <View className="ml-2">
+            <Text className="font-semibold text-lg text-black">
+              Hey, Alfrin Poulose
+            </Text>
+            <Text className="mt-1">Let's get started</Text>
+          </View>
+          </View>
+        </View>
+        <View className="bg-[#7672eb] p-3 rounded-3xl w-full mt-4">
+          <View className='flex-row justify-between'>
+            <View>
+            <Text className='mb-3 text-white'>Ongoing</Text>
+            <Text className='mb-3 text-white text-xl'>3D Arts & Illustration</Text>
+            <View className='mb-4'>
+            <Progress.Bar progress={0.5} width={180} color={'white'} unfilledColor={'#abb3ee'} borderColor={'transparent'} />
             </View>
-          ))}
-        </ScrollView>
-        <View>
-          <Text className='mt-10'>Account</Text>
-          <ScrollView className='w-full gap-3 mt-4'>
-          {account.map((item, index) => (
-            <View className="w-fit h-fit p-4 bg-red-500 rounded-md" style={item.bg} key={index}>
-              <Text className="text-md font-md text-green-500">
-                {item.label}
-              </Text>
             </View>
-          ))}
-        </ScrollView>
+            <View>
+            <Image source={require('../../assets/assets/images/3d-art-illution.png')} className="w-36 h-36"/>
+          </View>
+          </View>
+          <TouchableOpacity className='px-4 bg-[#abb3ee] py-2 w-[30%] rounded-full absolute bottom-5 left-3'>
+                <Text className='text-center text-white'>Continue</Text>
+            </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </Layout>
   );
-};
-
-export default home;
+}
