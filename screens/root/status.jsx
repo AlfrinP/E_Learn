@@ -9,7 +9,8 @@ export default function Status() {
     <View className='bg-purple-50'>
     <ScrollView  vertical={true} showsVerticalScrollIndicator={false} className="w-full gap-3">
         {status.map((item, index) => (
-          <View
+          <View>
+            <View
             className="flex-1 w-full h-fit p-5 bg-white rounded-md flex-row items-center"
             style={item.bg}
             key={index}>
@@ -23,6 +24,8 @@ export default function Status() {
                 {item.state}
               </Text>
             </View>
+          </View>
+          
           </View>
         ))}
       </ScrollView>
