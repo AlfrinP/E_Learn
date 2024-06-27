@@ -85,6 +85,37 @@ export const status = [
     label: 'Maths',
     state: 'Running...',
   },
+    {
+        img: require('../assets/assets/images/maths.png'),
+        label: 'Maths',
+        state: 'Running...',
+    },
+    {
+        img: require('../assets/assets/images/maths.png'),
+        label: 'Maths',
+        state: 'Running...',
+    },
+    {
+        img: require('../assets/assets/images/maths.png'),
+        label: 'Maths',
+        state: 'Running...',
+    },
+    {
+        img: require('../assets/assets/images/maths.png'),
+        label: 'Maths',
+        state: 'Running...',
+    },
+    {
+        img: require('../assets/assets/images/maths.png'),
+        label: 'Maths',
+        state: 'Running...',
+    },
+    {
+        img: require('../assets/assets/images/maths.png'),
+        label: 'Maths',
+        state: 'Running...',
+    },
+    
 ];
 
 export const videoData = [
