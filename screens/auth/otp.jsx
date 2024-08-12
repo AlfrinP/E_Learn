@@ -1,8 +1,11 @@
 import {Image, Text, TextInput, View} from 'react-native';
 import CustomButton from '../../components/ui/button';
 import Layout from '../../components/ui/layout';
+import {useNavigation} from '@react-navigation/native';
+
 
 export default function OTP() {
+  const navigation = useNavigation();
   return (
     <Layout>
       <View className="flex items-center justify-between flex-col w-full h-full ">
@@ -41,7 +44,7 @@ export default function OTP() {
             </Text>
           </View>
           <View className="w-full flex items-center justify-center">
-            <CustomButton text="verify" />
+            <CustomButton text="verify" onPress={()=>navigation.navigate('Dashboard')} />
           </View>
         </View>
       </View>

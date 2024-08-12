@@ -45,7 +45,7 @@ export default function Lecture() {
               <TouchableOpacity
                 className="flex flex-row items-center justify-between py-5 px-3 bg-white border-[1px] border-gray-300 rounded-lg mb-5"
                 onPress={() => toggleLesson(lessonIndex)}
-                key={lessonIndex}>
+                key={item.title}>
                 <Text className="text-black font-semibold text-base">
                   Lesson {lessonIndex + 1}
                 </Text>
@@ -53,10 +53,10 @@ export default function Lecture() {
               </TouchableOpacity>
 
               {expandedLesson === lessonIndex &&
-                item.videos.map((video, index) => (
+                item.videos.map((video) => (
                   <View
                     className="flex flex-row items-center justify-between p-4"
-                    key={index + lessonIndex}>
+                    key={video.subtitle}>
                     <View className="flex flex-row items-center justify-start gap-2">
                       <Check />
                       <Text className="capitalize">{video.subtitle}</Text>

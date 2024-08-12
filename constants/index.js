@@ -4,7 +4,7 @@ export const scroll = [
     time: '18 Hour Speed',
     bg: '#7672eb',
     pro: 0.5,
-    value: "50%",
+    value: '50%',
     fill: '#7672eb',
   },
   {
@@ -12,7 +12,7 @@ export const scroll = [
     time: '14 Hour Speed',
     bg: '#67cdd8',
     pro: 0.7,
-    value: "70%",
+    value: '70%',
     fill: '#84E9F4',
   },
   {
@@ -20,16 +20,16 @@ export const scroll = [
     time: '18 Hour Speed',
     bg: '#F472B6',
     pro: 0.8,
-    value: "80%",
-    fill:"#fecdd3"
+    value: '80%',
+    fill: '#fecdd3',
   },
   {
     label: 'Photoshop',
     time: '18 Hour Speed',
     bg: '#81b9e8',
     pro: 0.6,
-    value: "60%",
-    fill:"#b6d5ee"
+    value: '60%',
+    fill: '#b6d5ee',
   },
 ];
 
@@ -39,58 +39,57 @@ export const status = [
     label: 'Maths',
     state: 'Running...',
     pro: 0.2,
-    fill:"#7672eb",
-    bg:"#7672eb",
+    fill: '#7672eb',
+    bg: '#7672eb',
   },
   {
     img: require('../assets/assets/images/ui-ux.png'),
     label: 'UI/UX',
     state: 'Running...',
     pro: 0.6,
-    fill:"#7672eb",
-    bg:"#7672eb",
+    fill: '#7672eb',
+    bg: '#7672eb',
   },
   {
     img: require('../assets/assets/images/ui-ux.png'),
     label: '3D Art',
     state: 'Running...',
     pro: 0.3,
-    fill:"#7672eb",
-    bg:"#81b9e8",
+    fill: '#7672eb',
+    bg: '#81b9e8',
   },
   {
     img: require('../assets/assets/images/history.jpg'),
     label: 'History',
     state: 'Completed',
     pro: 1,
-    fill:"#16a34a",
-    bg:"#81b9e8",
+    fill: '#16a34a',
+    bg: '#81b9e8',
   },
   {
     img: require('../assets/assets/images/derivation.png'),
     label: 'Python',
     state: 'Running...',
     pro: 0.5,
-    fill:"#7672eb",
-    bg:"#7672eb",
+    fill: '#7672eb',
+    bg: '#7672eb',
   },
   {
     img: require('../assets/assets/images/biology.jpg'),
     label: 'Biology',
     state: 'Completed',
     pro: 1,
-    fill:"#16a34a",
-    bg:"#81b9e8",
+    fill: '#16a34a',
+    bg: '#81b9e8',
   },
   {
     img: require('../assets/assets/images/photoshop.png'),
     label: 'Editing',
     state: 'Completed',
     pro: 1,
-    fill:"#16a34a",
-    bg:"#81b9e8",
+    fill: '#16a34a',
+    bg: '#81b9e8',
   },
-
 ];
 
 export const videoData = [
@@ -171,37 +170,64 @@ export const videoData = [
   },
 ];
 
-export const dashboard =[
+export const dashboard = [
   {
-    status: "Ongoing",
-    title:"3D Arts & Illustration",
+    status: 'Ongoing',
+    title: '3D Arts & Illustration',
     bg: '#7672eb',
     pro: 0.5,
-    value: "50%",
+    value: '50%',
     fill: '#abb3ee',
   },
   {
-    status: "Ongoing",
-    title:"Derivation",
+    status: 'Ongoing',
+    title: 'Derivation',
     bg: '#67cdd8',
     pro: 0.7,
-    value: "70%",
+    value: '70%',
     fill: '#84E9F4',
   },
   {
-    status: "Ongoing",
-    title:"UI/UX",
+    status: 'Ongoing',
+    title: 'UI/UX',
     bg: '#F472B6',
     pro: 0.8,
-    value: "80%",
-    fill:"#fecdd3",
+    value: '80%',
+    fill: '#fecdd3',
   },
   {
-    status: "Ongoing",
-    title:"Photoshop",
+    status: 'Ongoing',
+    title: 'Photoshop',
     bg: '#81b9e8',
     pro: 0.6,
-    value: "60%",
-    fill:"#b6d5ee",
-  }
-]
+    value: '60%',
+    fill: '#b6d5ee',
+  },
+];
+
+export const courses = [
+  {
+    title: '3D Arts & Illustration',
+    img: require('../assets/assets/images/photoshop.png'),
+    classes: 3,
+    fill: '#67cdd8',
+  },
+  {
+    title: 'Derivation',
+    img: require('../assets/assets/images/derivation.png'),
+    classes: 30,
+    fill: '#81b9e8',
+  },
+  {
+    title: 'UI/UX',
+    img: require('../assets/assets/images/ui-ux.png'),
+    classes: 63,
+    fill: '#7672eb',
+  },
+  {
+    title: 'Photoshop',
+    img: require('../assets/assets/images/bussiness.png'),
+    classes: 13,
+    fill: '#b6d5ee',
+  },
+];

@@ -3,8 +3,14 @@ import {Image, Text, TextInput, View} from 'react-native';
 import Profile from '../../assets/assets/images/profile.svg';
 import CustomButton from '../../components/ui/button';
 import Layout from '../../components/ui/layout';
+import {useNavigation} from '@react-navigation/native';
 
 export default function Name() {
+  const navigation = useNavigation();
+
+  const goToOTPScreen = () => {
+    navigation.navigate('Password'); // Navigate to the OTP screen
+  };
   return (
     <Layout>
       <View className="flex items-center justify-between flex-col w-full h-full bg-white">
@@ -29,7 +35,10 @@ export default function Name() {
             </View>
           </View>
         </View>
-        <CustomButton text="submit" />
+        <CustomButton
+          text="join now"
+          onPress={() => navigation.navigate('Password')}
+        />
       </View>
     </Layout>
   );

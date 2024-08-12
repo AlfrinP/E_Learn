@@ -1,10 +1,12 @@
 import React from 'react';
-import {Image, Text, TextInput, View} from 'react-native';
+import {Image, Text, TextInput, View, Button} from 'react-native';
 import CustomButton from '../../components/ui/button';
 import Layout from '../../components/ui/layout';
 import Phone from '../../assets/assets/images/phone.svg';
+import {useNavigation} from '@react-navigation/native';
 
 function Login() {
+  const navigation = useNavigation();
   return (
     <Layout>
       <View className="flex items-center justify-center flex-col w-full h-full bg-white">
@@ -30,7 +32,11 @@ function Login() {
             </View>
           </View>
         </View>
-        <CustomButton text="join now" />
+        <CustomButton
+          text="join now"
+          onPress={() =>
+            navigation.navigate('Name')}
+        />
         <View className="w-full flex items-center justify-center mt-5">
           <Text>
             Don't have a account ?

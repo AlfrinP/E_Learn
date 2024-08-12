@@ -1,6 +1,6 @@
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
+import {View} from 'react-native';
 
 export default function Layout({children}) {
-  return <SafeAreaView className="p-5 w-full h-full">{children}</SafeAreaView>;
+  return <View className="flex-1 p-2 pt-10">{children}</View>;
 }

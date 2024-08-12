@@ -6,6 +6,8 @@ import Lock from '../../assets/assets/images/password-lock.svg';
 import EyeOpen from '../../assets/assets/images/dont-view.svg';
 import Check from '../../assets/assets/images/compleated.svg';
 import CheckOk from '../../assets/assets/images/compleated-light.svg';
+import {useNavigation} from '@react-navigation/native';
+
 
 function Password() {
   const [open, setOpen] = useState(false);
@@ -40,6 +42,8 @@ function Password() {
       <CheckOk width={20} height={20} />
     );
   };
+
+  const navigation = useNavigation();
 
   return (
     <Layout>
@@ -108,7 +112,10 @@ function Password() {
             </View>
           </View>
         </View>
-        <CustomButton text="Submit" />
+        <CustomButton
+          text="Submit"
+          onPress={() => navigation.navigate('MainContainer')}
+        />
       </View>
     </Layout>
   );
